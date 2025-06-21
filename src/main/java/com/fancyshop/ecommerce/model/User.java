@@ -4,7 +4,7 @@ import lombok.experimental.PackagePrivate;
 
 import java.util.Set;
 
-import javax.management.relation.Role;
+// import javax.management.relation.Role;
 public class User {
     @Id
     // AUTO genterate the ID using the db's identity col
