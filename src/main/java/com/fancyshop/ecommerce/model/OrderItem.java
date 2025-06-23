@@ -11,11 +11,11 @@ public class OrderItem {
     // how many items
     private Integer quantity;
     private Double price;
-// one order has many items , specify order item can only belongs to one order 
+// one order has many items  
     @ManyToOne
     @JoinColumn(name ="order_id")
     private Order order;
-
+// the same product could be order many times, 
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
