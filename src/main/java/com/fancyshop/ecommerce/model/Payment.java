@@ -11,7 +11,7 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String stripePyamentId;
+    private String stripePaymentId;
     private Double amount;
     private String currency;
     private String status;
@@ -24,9 +24,9 @@ public class Payment {
     public Long getId(){return id;}
     public void setId(Long id){this.id= id;}
 
-    public String getStripePyamentId(){return stripePyamentId;}
-    public void setStripePyamentId(String stripePyamentId){this.stripePyamentId= stripePyamentId;}
-    
+    public String getStripePaymentId(){return stripePaymentId;}
+    public void setStripePaymentId(String stripePaymentId){this.stripePaymentId= stripePaymentId;}
+
     public Double getAmount(){return amount;}
     public void setAmount(Double amount){this.amount= amount;}
 

@@ -45,7 +45,7 @@ public class User {
     public void setAddress(String address){this.address = address;}
 
     public String getPhoneNumber(){return phoneNumber;}
-    public void setphoneNumber(String phoneNumber){this.phoneNumber = phoneNumber;}
+    public void setPhoneNumber(String phoneNumber){this.phoneNumber = phoneNumber;}
 
     public Set<Role> getRoles() { return roles; }
     public void setRoles(Set<Role> roles) { this.roles = roles; }
