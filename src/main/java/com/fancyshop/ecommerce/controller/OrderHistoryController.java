@@ -13,7 +13,7 @@ import java.util.Optional;
 public class OrderHistoryController {
     private final OrderHistoryRepository orderHistoryRepository;
   
-    public OrderHistoryController(OrderHistoryRepository orderHistoryRepository, UserRepository userRepository, RoleRepository roleRepository) {
+    public OrderHistoryController(OrderHistoryRepository orderHistoryRepository) {
         this.orderHistoryRepository = orderHistoryRepository;
     }
 

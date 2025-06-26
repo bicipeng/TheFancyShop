@@ -3,7 +3,8 @@ import jakarta.persistence.*;
 import lombok.experimental.PackagePrivate;
 
 import java.util.Set;
-
+@Entity
+@Table(name = "users")
 // import javax.management.relation.Role;
 public class User {
     @Id

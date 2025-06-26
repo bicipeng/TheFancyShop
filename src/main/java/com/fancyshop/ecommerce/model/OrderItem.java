@@ -3,7 +3,7 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Set;
 @Entity
-@Table(name ="orders")
+@Table(name ="order_item")
 public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,9 +19,6 @@ public class OrderItem {
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
-
-    @OneToMany(mappedBy ="order", cascade = CascadeType.ALL)
-    private Set<OrderItem> orderItems;
 
     public Long getId() {return id;}
     public void setId(Long id){this.id =id;}
